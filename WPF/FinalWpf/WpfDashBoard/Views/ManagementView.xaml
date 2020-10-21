@@ -1,0 +1,130 @@
+﻿<UserControl x:Class="WpfDashBoard.Views.ManagementView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfDashBoard"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             mc:Ignorable="d"  
+             d:DesignHeight="800" d:DesignWidth="1350">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="95"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="51*"/>
+            <RowDefinition Height="51*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Label Grid.Row="0" Grid.Column="0"
+                    Content="ManageMent" 
+                    Foreground="#DD000000" FontSize="35" FontWeight="Bold"/>
+            <Separator Margin="5,2,10,2" />
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Label Grid.Row="0" Grid.Column="0" Margin="50,0,0,0"
+                    Content="1Floor" 
+                    Foreground="#DD000000" FontSize="30" FontWeight="Bold"/>
+            <Separator Margin="50,2,50,2" />
+            <Grid Height="180" Margin="50,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="   알람 온도(℃)" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="25"/>
+                <Label Content="   알람 습도(%)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" FontSize="25"/>
+                <Label Content="   알람 침입 시간대" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" FontSize="25"/>
+                <Label Content="   알람 차량 수위(mm)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="2" FontSize="25"/>
+                <Label Content="   알람 수위(mm)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="2" FontSize="25"/>
+                <TextBox Grid.Row="0" Grid.Column="1" FontSize="24" VerticalAlignment="Bottom" />
+                <TextBox Grid.Row="1" Grid.Column="1" FontSize="24" VerticalAlignment="Bottom" />
+                <TextBox Grid.Row="0" Grid.Column="3" FontSize="24" VerticalAlignment="Bottom" />
+                <TextBox Grid.Row="1" Grid.Column="3" FontSize="24" VerticalAlignment="Bottom" />
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"  >
+                    <materialDesign:TimePicker Width="135" VerticalAlignment="Bottom" FontSize="20"/>
+                    <Label  Content="  ~  " VerticalAlignment="Bottom" FontSize="25"/>
+                    <materialDesign:TimePicker Width="135" VerticalAlignment="Bottom" FontSize="20"/>
+                </StackPanel>
+                <Button Grid.Column="4" Grid.Row="2" Content="Set up" Margin="0,18,146,0" Height="Auto" Style="{DynamicResource MahApps.Styles.Button.Dialogs.Accent}" FontSize="20"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <Label Grid.Row="0" Grid.Column="0" Margin="50,0,0,0"
+                    Content="2Floor" 
+                    Foreground="#DD000000" FontSize="30" FontWeight="Bold"/>
+            <Separator Margin="50,2,50,2" />
+            <Grid Height="180" Margin="50,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="   알람 온도(℃)" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="25"/>
+                <Label Content="   알람 습도(%)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" FontSize="25"/>
+                <Label Content="   알람 침입 시간대" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" FontSize="25"/>
+                <Label Content="   알람 차량 수위(mm)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="2" FontSize="25"/>
+                <Label Content="   알람 수위(mm)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="2" FontSize="25"/>
+                <TextBox Grid.Row="0" Grid.Column="1" FontSize="24" />
+                <TextBox Grid.Row="1" Grid.Column="1" FontSize="24" />
+                <TextBox Grid.Row="0" Grid.Column="3" FontSize="24" />
+                <TextBox Grid.Row="1" Grid.Column="3" FontSize="24" />
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"  >
+                    <materialDesign:TimePicker Width="135" VerticalAlignment="Bottom" FontSize="20"/>
+                    <Label  Content="  ~  " VerticalAlignment="Bottom" FontSize="25"/>
+                    <materialDesign:TimePicker Width="135" VerticalAlignment="Bottom" FontSize="20"/>
+                </StackPanel>
+                <Button Grid.Column="4" Grid.Row="2" Content="Set up" Margin="0,18,146,0" Height="Auto" Style="{DynamicResource MahApps.Styles.Button.Dialogs.Accent}" FontSize="20"/>
+            </Grid>
+        </StackPanel>
+        <StackPanel Grid.Row="3">
+            <Label Grid.Row="0" Grid.Column="0" Margin="50,0,0,0"
+                    Content="3Floor" 
+                    Foreground="#DD000000" FontSize="30" FontWeight="Bold"/>
+            <Separator Margin="50,2,50,2" />
+            <Grid Height="180" Margin="50,0,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="   알람 온도(℃)" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="25"/>
+                <Label Content="   알람 습도(%)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" FontSize="25"/>
+                <Label Content="   알람 침입 시간대" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="2" Grid.Column="0" FontSize="25"/>
+                <Label Content="   알람 차량 수위(mm)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="2" FontSize="25"/>
+                <Label Content="   알람 수위(mm)" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="2" FontSize="25"/>
+                <TextBox Grid.Row="0" Grid.Column="1" FontSize="24" />
+                <TextBox Grid.Row="1" Grid.Column="1" FontSize="24" />
+                <TextBox Grid.Row="0" Grid.Column="3" FontSize="24" />
+                <TextBox Grid.Row="1" Grid.Column="3" FontSize="24" />
+                <StackPanel Orientation="Horizontal" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center"  >
+                    <materialDesign:TimePicker Width="135" VerticalAlignment="Bottom" FontSize="20"/>
+                    <Label  Content="  ~  " VerticalAlignment="Bottom" FontSize="25"/>
+                    <materialDesign:TimePicker Width="135" VerticalAlignment="Bottom" FontSize="20"/>
+                </StackPanel>
+                <Button Grid.Column="4" Grid.Row="2" Content="Set up" Margin="0,18,146,0" Height="Auto" Style="{DynamicResource MahApps.Styles.Button.Dialogs.Accent}" FontSize="20"/>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</UserControl>

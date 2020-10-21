@@ -1,0 +1,20 @@
+﻿<mah:MetroWindow x:Class="WpfDashBoard.Views.DialogView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfDashBoard.Views"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        mc:Ignorable="d"
+        Title="DialogView" Height="120" Width="250"
+        ResizeMode="NoResize" WindowStyle="ToolWindow" 
+        WindowStartupLocation="CenterOwner">
+    <StackPanel Margin="2">
+        <Label x:Name="DisplayName"
+                    Height="40"  Margin="5"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5,1,5,5">
+            <Button Content="확인" Width="80" IsCancel="True" Foreground="#DDFFFFFF" FontWeight="Bold"/>
+        </StackPanel>
+
+    </StackPanel>
+</mah:MetroWindow>
